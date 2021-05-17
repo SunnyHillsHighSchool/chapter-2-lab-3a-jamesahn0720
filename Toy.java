@@ -2,10 +2,27 @@
 //www.apluscompsci.com
 //Name -
 
-//design and create
-//your Toy class
-
-//Use the lab handout
-//and sample runner
-//code provided
-//to help you
+public class Toy {
+   private String name;
+   private int count;
+   public Toy(){
+       name="";
+       count=0;
+   }
+   public Toy(String nm){
+       name=nm;
+   }
+   public int getCount(){
+       return count;
+   }
+   public void setCount(int cnt){
+       count=cnt;
+   }
+   public String getName() {
+       return name;
+   }
+   public void setName(String name) {
+       this.name = name;
+   }
+  
+}
