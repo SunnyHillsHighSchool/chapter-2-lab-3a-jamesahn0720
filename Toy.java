@@ -3,26 +3,29 @@
 //Name -
 
 public class Toy {
-   private String name;
    private int count;
-   public Toy(){
-       name="";
-       count=0;
-   }
-   public Toy(String nm){
-       name=nm;
-   }
-   public int getCount(){
-       return count;
-   }
-   public void setCount(int cnt){
-       count=cnt;
-   }
-   public String getName() {
-       return name;
-   }
-   public void setName(String name) {
-       this.name = name;
-   }
+   private String name;
+    public Toy(String n)
+  {
+    name = n;
+    count = 1;
+  }
+
+  public int getCount() {
+     return count;
+  }
+  public String getName() {
+     return name;
+  }
+
+  public void setCount(int c) {
+     count = c;
+  }
+
+  public String toString()
+  {
+    return name + " " + count;
+  }
+
   
 }
