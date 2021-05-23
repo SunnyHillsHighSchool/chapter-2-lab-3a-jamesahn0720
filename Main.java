@@ -6,16 +6,15 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		 ToyStore t1=new ToyStore();
-       t1.loadToys("sorry bat sorry sorry sorry train train teddy teddy ball ball");
-       System.out.println("Toys: ["+t1+"]");
-      
-       System.out.println("Most frequent toy: "+t1.getMostFrequentToy());
-      
-       String toy="bat";
-       System.out.println("Count of toy "+toy+"="+t1.getThatToy(toy).getCount());
-      
-       t1.sortToysByCount();
-       System.out.println("Sorted toys: ["+t1+"]");
+	Toy t = new Toy( "sorry" );
+    System.out.println( t.getCount() );
+    System.out.println( t );
+    System.out.println( t.getName() );
+
+    Toy s = new Toy( "ji goe" );
+    System.out.println(s.getCount() );
+    s.setCount( 5 );
+    System.out.println(s.getCount() );
+    System.out.println( s );
 	}
 }
